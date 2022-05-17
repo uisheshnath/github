@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  const Shof = () =>{ document.getElementById("popup").style.display = 'block' ; }   
+  const hidof = () =>{   document.getElementById("popup").style.display = 'none' ; } 
+ const office = {md:" Md Amit ",ceo:" ceo Mohan " ,tl:" Team Leader Ajay ",emp:" emp mahesh ",empid:" ifd-002 "}  
+                                                                                               
+</script>
+
+
+
+</head>
+<body>
+
+
+  <div id="header"></div>
+
+
+  <p><strong>1.Class Methord</strong></p>
+<p id="pop"><b>Name :</b> <script>document.write( office.md);</script> <br/><b>TL :</b><script>document.write( office.tl);</script>  </p>
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ea odit dolores. Provident laboriosam . <br>tempora! Magni consequuntur iure quaerat. Voluptatem.<br><br>
+
+<p>Click the radio button to toggle between password visibility:</p>
+
+ <p><strong>2. Password Show in Text Form</strong></p>
+Password: <input type="password" value="FakePSW" id="myInput">
+<input type="checkbox" onclick="myFunction()">
+
+<p><strong> 3. Modals  </strong></p>
+<div id="popup">
+<h1>Hello sir <script> document.write(office.md);</script> </h1>
+<p>How are You<script> document.write(office.ceo);document.write(Date())</script></p>
+
+<span class="pop" onclick="hidof()">X</span>
+</div>
+<br> 
+<button id="pop" onclick="Shof()">Click Me </button>
+
+
+<br><br>
+
+
+
+
+
+
+
+
+
+<script>
+  let txt = "";
+  const game = ['man','apple','boy','girls','goal'];
+  game.forEach(myFunction);
+
+function myFunction(value) {
+  txt +=  "<br>"+ value + "<br>"; 
+}
+let d = new Date();
+ document.write(txt);
+</script>
+
+<h2>ToGet Math Expression</h2>
+<script>
+  document.write(" Power of pow(20,2) is = "+' ' + Math.pow(20,2) + "<br><br>");
+  document.write(Math.floor(Math.random() * 1000));
+</script>
+
+
+
+<div id="footer"></div>
+<script src="header.js"></script>
+<button onClick="header()">Header</button>
+
+<script> 
+  $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+  });
+  </script> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
